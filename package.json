@@ -1,0 +1,31 @@
+{
+  "name": "ignitesolid",
+  "version": "1.0.0",
+  "description": "GymPass style app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src/server.ts --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevRafaelCena/ignite-SOLID.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevRafaelCena/ignite-SOLID/issues"
+  },
+  "homepage": "https://github.com/DevRafaelCena/ignite-SOLID#readme",
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "tsup": "^6.6.3",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "fastify": "^4.14.1"
+  }
+}
