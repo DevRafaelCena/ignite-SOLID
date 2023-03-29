@@ -1,4 +1,5 @@
 import { hash } from 'bcryptjs'
+import { UsersRepository } from '../repositories/users.repository'
 
 interface RegisterUseCaseRequest {
   name: string
@@ -9,7 +10,7 @@ interface RegisterUseCaseRequest {
 export class RegisterUseCase {
 
   constructor(
-   private usersRepository: any
+   private usersRepository: UsersRepository
   ){}
 
   async execute({
